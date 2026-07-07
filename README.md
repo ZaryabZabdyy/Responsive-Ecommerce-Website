@@ -1,2 +1,2 @@
-# Responsive-Ecommerce-Website
-ZabdyCart – Responsive E-Commerce Frontend
+# ZabdyCart – Responsive E-Commerce Frontend
+

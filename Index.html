@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZabdyCart - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to external JavaScript file -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="main-header">
+        
+        <div class="top-bar">
+            <div class="container header-flex">
+                <div class="top-bar-left">
+                    <p>Free Shipping on orders over $50! 🎉</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mid-header">
+            <div class="container header-flex">
+                
+                <div class="logo-container">
+                    <a href="#" id="logo-home">
+                        <img src="image_42e642.png" alt="ZabdyCart Logo" class="site-logo" >
+                    </a>
+                </div>
+
+                <div class="search-box">
+                    <form action="#" method="GET">
+                        <input type="text" placeholder="Search for products, brands and categories..." name="search">
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+
+                <div class="header-actions">
+                    <a href="#" class="action-item" title="Account">
+                        <i class="fa-regular fa-user"></i>
+                        <span>Sign In</span>
+                    </a>
+                    <a href="#" class="action-item" title="Wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                        <span id="wishlist-count" class="badge">0</span>
+                    </a>
+                    <a href="#" class="action-item cart-btn" title="Shopping Cart">
+                        <div class="cart-icon-wrap">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                            <span id="cart-count" class="badge badge-coral">0</span>
+                        </div>
+                        <div class="cart-text">
+                            <small>Your Cart</small>
+                            <strong id="cart-total">$0.00</strong>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <nav class="navigation-bar">
+            <div class="container">
+                <ul class="nav-links">
+                    <li><a href="#" id="nav-home" class="active">Home</a></li>
+                    <li><a href="#" id="nav-shop-all">Shop All</a></li>
+                    <li class="dropdown">
+                        <a href="#">Categories <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="category-link" data-category="Electronics">Electronics</a></li>
+                            <li><a href="#" class="category-link" data-category="Fashion & Apparel">Fashion & Apparel</a></li>
+                            <li><a href="#" class="category-link" data-category="Home & Kitchen">Home & Kitchen</a></li>
+                            <li><a href="#" class="category-link" data-category="Gadgets">Gadgets</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Hot Deals 🔥</a></li>
+                    <!-- Added specific IDs for tracking -->
+                    <li><a href="#" id="nav-about">About Us</a></li>
+                    <li><a href="#" id="nav-contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <main class="main-content">
+        <div class="main-container">
+            
+            <section class="category-section" style="margin-bottom: 50px;">
+                <h2 class="category-title"> Electronics</h2>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image-wrap">
+                            <img src="Electronics/LG Fridge.avif.jpg" alt="LG InstaView Door-in-Door Refrigerator">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name" title="LG InstaView Door-in-Door Refrigerator">LG InstaView Door-in-Door Refrigerator</h3>
+                            <p class="product-description">Keep your food fresh with premium cooling technology and a sleek glass panel window.</p>
+                            <div class="product-meta-wrap">
+                                <span class="product-price">$2,199</span>
+                                <div class="action-buttons-wrap">
+                                    <button class="btn-buy">Buy Now</button>
+                                    <button class="btn-wishlist" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image-wrap">
+                            <img src="Electronics/LG Vaccum Cleaner.jpg" alt="LG CordZero A9 Cordless Vacuum">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name" title="LG CordZero A9 Cordless Vacuum">LG CordZero A9 Cordless Vacuum</h3>
+                            <p class="product-description">Powerful suction and lightweight design for easy, hassle-free household cleaning.</p>
+                            <div class="product-meta-wrap">
+                                <span class="product-price">$649</span>
+                                <div class="action-buttons-wrap">
+                                    <button class="btn-buy">Buy Now</button>
+                                    <button class="btn-wishlist" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image-wrap">
+                            <img src="Electronics/SamsungOven.png" alt="Samsung Bespoke Smart Oven">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name" title="Samsung Bespoke Smart Oven">Samsung Bespoke Smart Oven</h3>
+                            <p class="product-description">Cook smarter and elevate your kitchen aesthetics with customized, smart cooking tech.</p>
+                            <div class="product-meta-wrap">
+                                <span class="product-price">$799</span>
+                                <div class="action-buttons-wrap">
+                                    <button class="btn-buy">Buy Now</button>
+                                    <button class="btn-wishlist" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image-wrap">
+                            <img src="Electronics/LED.jpg" alt="4K Samsung Vision AI Smart TV">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name" title="4K Samsung Vision AI Smart TV (2026)">4K Samsung Vision AI Smart TV (2026)</h3>
+                            <p class="product-description">Experience next-gen cinema immersion with stunning Micro RGB colors and advanced AI upscaling.</p>
+                            <div class="product-meta-wrap">
+                                <span class="product-price">$7,990</span>
+                                <div class="action-buttons-wrap">
+                                    <button class="btn-buy">Buy Now</button>
+                                    <button class="btn-wishlist" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image-wrap">
+                            <img src="Electronics/Galaxybook.png" alt="Galaxy Book6 Pro">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name" title="Galaxy Book6 Pro, 35.56 cm, Ultra X7, 32 GB, Copilot+ PC">Galaxy Book6 Pro, 35.56 cm, Ultra X7, 32 GB, Copilot+ PC</h3>
+                            <p class="product-description">Ultimate performance meets sleek, premium portability with futuristic built-in AI capabilities.</p>
+                            <div class="product-meta-wrap">
+                                <span class="product-price">$989</span>
+                                <div class="action-buttons-wrap">
+                                    <button class="btn-buy">Buy Now</button>
+                                    <button class="btn-wishlist" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="category-section" style="margin-bottom: 50px;">
+                <h2 class="category-title"> Fashion & Apparel</h2>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image-wrap">
+                            <img src="Fashion & Apparel/T_Shirt.jpg" alt="H&M Regular Fit Cotton T-Shirt">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name" title="H&M Regular Fit Cotton T-Shirt">H&M Regular Fit Cotton T-Shirt</h3>
+                            <p class="product-description">Comfortable and breathable regular fit t-shirt crafted from pure high-quality cotton.</p>
+                            <div class="product-meta-wrap">
+                                <span class="product-price">$100</span>
+                                <div class="action-buttons-wrap">
+                                    <button class="btn-buy">Buy Now</button>
+                                    <button class="btn-wishlist" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image-wrap">
+                            <img src="Fashion & Apparel/Jeans.jpg" alt="Levi’s 511 Slim Fit Jeans">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name" title="Levi’s 511 Slim Fit Jeans">Levi’s 511 Slim Fit Jeans</h3>
+                            <p class="product-description">A modern slim fit with room to move, perfect for casual styling and daily wear.</p>
+                            <div class="product-meta-wrap">
+                                <span class="product-price">$200</span>
+                                <div class="action-buttons-wrap">
+                                    <button class="btn-buy">Buy Now</button>
+                                    <button class="btn-wishlist" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image-wrap">
+                            <img src="Fashion & Apparel/Nike Jacket.jpg" alt="Nike Sportswear Windrunner">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name" title="Nike Sportswear Windrunner">Nike Sportswear Windrunner</h3>
+                            <p class="product-description">Classic athletic windbreaker jacket combining lightweight comfort and iconic street style.</p>
+                            <div class="product-meta-wrap">
+                                <span class="product-price">$150</span>
+                                <div class="action-buttons-wrap">
+                                    <button class="btn-buy">Buy Now</button>
+                                    <button class="btn-wishlist" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image-wrap">
+                            <img src="Fashion & Apparel/Sneakers.jpg" alt="Adidas Grand Court Sneakers">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name" title="Adidas Grand Court Sneakers">Adidas Grand Court Sneakers</h3>
+                            <p class="product-description">Timeless tennis-inspired sneakers with classic 3-stripes detailing and cushioned feel.</p>
+                            <div class="product-meta-wrap">
+                                <span class="product-price">$100</span>
+                                <div class="action-buttons-wrap">
+                                    <button class="btn-buy">Buy Now</button>
+                                    <button class="btn-wishlist" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image-wrap">
+                            <img src="Fashion & Apparel/Cap.jpg" alt="Nike Club Unstructured Cap">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name" title="Nike Club Unstructured Cap">Nike Club Unstructured Cap</h3>
+                            <p class="product-description">A classic, unstructured low-profile cap with an adjustable strap for the perfect fit.</p>
+                            <div class="product-meta-wrap">
+                                <span class="product-price">$40</span>
+                                <div class="action-buttons-wrap">
+                                    <button class="btn-buy">Buy Now</button>
+                                    <button class="btn-wishlist" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Category: Home & Kitchen -->
+            <section class="category-section" style="margin-bottom: 50px;">
+                <h2 class="category-title"> Home & Kitchen</h2>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image-wrap">
+                            <img src="Home & Kitchen/Dining set.jpg" alt="IKEA LISABO Dining Table Set">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name" title="IKEA LISABO Dining Table Set">IKEA LISABO Dining Table Set</h3>
+                            <p class="product-description">Sturdy, elegant wooden dining table set designed to bring a modern aesthetic to your dining area.</p>
+                            <div class="product-meta-wrap">
+                                <span class="product-price">$150</span>
+                                <div class="action-buttons-wrap">
+                                    <button class="btn-buy">Buy Now</button>
+                                    <button class="btn-wishlist" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image-wrap">
+                            <img src="Home & Kitchen/Tefal set.jpg" alt="Tefal Non-Stick Cookware Set (8–10 pcs)">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name" title="Tefal Non-Stick Cookware Set (8–10 pcs)">Tefal Non-Stick Cookware Set (8–10 pcs)</h3>
+                            <p class="product-description">Premium non-stick durable coating pots and pans setup for effortless healthy cooking every day.</p>
+                            <div class="product-meta-wrap">
+                                <span class="product-price">$50</span>
+                                <div class="action-buttons-wrap">
+                                    <button class="btn-buy">Buy Now</button>
+                                    <button class="btn-wishlist" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image-wrap">
+                            <img src="Home & Kitchen/bedsheet.jpg" alt="IKEA DVALA Cotton Bed Sheet Set">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name" title="IKEA DVALA Cotton Bed Sheet Set">IKEA DVALA Cotton Bed Sheet Set</h3>
+                            <p class="product-description">Soft, breathable pure combed cotton bed sheets crafted for ultimate comfort and refreshing sleep.</p>
+                            <div class="product-meta-wrap">
+                                <span class="product-price">$79</span>
+                                <div class="action-buttons-wrap">
+                                    <button class="btn-buy">Buy Now</button>
+                                    <button class="btn-wishlist" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image-wrap">
+                            <img src="Home & Kitchen/Kettle.jpg" alt="Philips HD9306 Electric Kettle">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name" title="Philips HD9306 Electric Kettle">Philips HD9306 Electric Kettle</h3>
+                            <p class="product-description">Fast-boiling, food-grade stainless steel electric kettle with automatic steam shut-off system.</p>
+                            <div class="product-meta-wrap">
+                                <span class="product-price">$90</span>
+                                <div class="action-buttons-wrap">
+                                    <button class="btn-buy">Buy Now</button>
+                                    <button class="btn-wishlist" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image-wrap">
+                            <img src="Home & Kitchen/storage box.jpg" alt="IKEA SKUBB Storage Boxes">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name" title="IKEA SKUBB Storage Boxes">IKEA SKUBB Storage Boxes</h3>
+                            <p class="product-description">Space-saving fabric storage organizer compartments, ideal for sorting clothes and keeping rooms neat.</p>
+                            <div class="product-meta-wrap">
+                                <span class="product-price">$65</span>
+                                <div class="action-buttons-wrap">
+                                    <button class="btn-buy">Buy Now</button>
+                                    <button class="btn-wishlist" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Category: Gadgets -->
+            <section class="category-section" style="margin-bottom: 50px;">
+                <h2 class="category-title"> Gadgets</h2>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image-wrap">
+                            <img src="Gadgets/samsung A55.png" alt="Samsung Galaxy A55 5G">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name" title="Samsung Galaxy A55 5G">Samsung Galaxy A55 5G</h3>
+                            <p class="product-description">Brilliant AMOLED display mixed with powerful performance and an exceptional multi-lens camera array.</p>
+                            <div class="product-meta-wrap">
+                                <span class="product-price">$470</span>
+                                <div class="action-buttons-wrap">
+                                    <button class="btn-buy">Buy Now</button>
+                                    <button class="btn-wishlist" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image-wrap">
+                            <img src="Gadgets/Applywatch.jpg" alt="Apple Watch SE (3rd Gen)">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name" title="Apple Watch SE (3rd Gen)">Apple Watch SE (3rd Gen)</h3>
+                            <p class="product-description">Track your fitness, stay connected seamlessly, and enjoy essential health monitoring insights on the go.</p>
+                            <div class="product-meta-wrap">
+                                <span class="product-price">$99</span>
+                                <div class="action-buttons-wrap">
+                                    <button class="btn-buy">Buy Now</button>
+                                    <button class="btn-wishlist" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image-wrap">
+                            <img src="Gadgets/Sonny Airbuds.jpg" alt="Sony WF-C700N Wireless Earbuds">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name" title="Sony WF-C700N Wireless Earbuds">Sony WF-C700N Wireless Earbuds</h3>
+                            <p class="product-description">Immersive crystal clear noise-canceling audio packed into a lightweight, all-day comfortable fit design.</p>
+                            <div class="product-meta-wrap">
+                                <span class="product-price">$60</span>
+                                <div class="action-buttons-wrap">
+                                    <button class="btn-buy">Buy Now</button>
+                                    <button class="btn-wishlist" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image-wrap">
+                            <img src="Gadgets/powerbank.jpg" alt="Anker PowerCore 20,000mAh">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name" title="Anker PowerCore 20,000mAh">Anker PowerCore 20,000mAh</h3>
+                            <p class="product-description">Ultra-high capacity external portable battery supply built for lightning fast multiport device charging.</p>
+                            <div class="product-meta-wrap">
+                                <span class="product-price">$109</span>
+                                <div class="action-buttons-wrap">
+                                    <button class="btn-buy">Buy Now</button>
+                                    <button class="btn-wishlist" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image-wrap">
+                            <img src="Gadgets/heroblackcamera.webp" alt="GoPro HERO12 Black">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name" title="GoPro HERO12 Black">GoPro HERO12 Black</h3>
+                            <p class="product-description">Rugged cinematic action capture system boasting best-in-class stabilization and high dynamic range output.</p>
+                            <div class="product-meta-wrap">
+                                <span class="product-price">$369</span>
+                                <div class="action-buttons-wrap">
+                                    <button class="btn-buy">Buy Now</button>
+                                    <button class="btn-wishlist" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- About Us Section -->
+            <section id="about-section" class="info-view-section" style="display: none;">
+                <h2 class="category-title">About ZabdyCart</h2>
+                <div class="info-card-content">
+                    <p>Welcome to <strong>ZabdyCart</strong>, your premier destination for next-generation tech, modern fashion, and premium home essentials. Established with a vision to redefine the digital shopping landscape, we prioritize unparalleled customer care, authentic product sources, and global accessibility.</p>
+                    <p>Our dedicated structural updates ensure real-time secure management parameters across our entire distribution network, delivering your premium choices seamlessly straight to your doorstep.</p>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact-section" class="info-view-section" style="display: none;">
+                <h2 class="category-title">Contact Support</h2>
+                <div class="info-card-content contact-grid">
+                    <div class="contact-info-block">
+                        <h3><i class="fa-solid fa-headset"></i> Get In Touch</h3>
+                        <p>Have questions about an order or technical details? Our team is active 24/7 to support your workflow needs.</p>
+                        
+                        <ul class="contact-details-list">
+                            <li><strong><i class="fa-solid fa-envelope"></i> Email:</strong> <a href="mailto:support@zabdycodes.com">support@zabdycodes.com</a></li>
+                            <li><strong><i class="fa-solid fa-phone"></i> National Hotline:</strong> +92 41 9230081</li>
+                            <li><strong><i class="fa-solid fa-globe"></i> International Support:</strong> +1 (800) 555-ZABDY</li>
+                            <li><strong><i class="fa-solid fa-location-dot"></i> Corporate HQ:</strong> Faisalabad, Punjab, Pakistan</li>
+                        </ul>
+                    </div>
+                    <div class="contact-hours-block">
+                        <h3><i class="fa-solid fa-clock"></i> Business Hours</h3>
+                        <p><strong>Monday - Friday:</strong> 09:00 AM – 06:00 PM (PKT)</p>
+                        <p><strong>Saturday:</strong> 10:00 AM – 03:00 PM (PKT)</p>
+                        <p><strong>Sunday:</strong> Closed (Digital Support Intake Only)</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+    <footer class="site-footer">
+    <div class="footer-top">
+        <div class="container footer-grid">
+            
+            <div class="footer-col brand-info">
+                <img src="image_42e642.png" alt="Logo" class="footer-logo">
+                <p>Your ultimate destination for premium shopping. Quality products delivered straight to your doorstep.</p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col footer-btn-wrap">
+                <a href="javascript:void(0)" id="footerContactBtn" class="footer-contact-btn">
+                <i class="fas fa-envelope"></i> Contact Us
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="bottom-flex">
+            <p>&copy; 2026 Zabdy Codes. All Rights Reserved.</p>
+            <div class="back-to-top">
+                <a href="#home">Back to Top <i class="fas fa-arrow-up"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,4 +1,4 @@
-# ZabdyCart 🛒 Responsive Eccomerce Websitee
+# ZabdyCart 🛒 Responsive Eccomerce Website
 
 A modern, fast, and fully responsive e-commerce frontend interface built with sleek typography, real-time interactivity, and a clean corporate layout.
 
